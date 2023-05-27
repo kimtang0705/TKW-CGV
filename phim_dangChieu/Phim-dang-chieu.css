@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container-phimnew{
+    position:absolute;
+    width: 100%;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 115px;
+}
+li{
+    position: relative;
+    padding: 0 3%;
+    list-style: none;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.kich-thuoc h1{
+    font-size: 1em;
+}
+.movie-info{
+    font-size: 15px;
+}
+.kich-thuoc h1 a{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+#theme{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.sua{
+    height: 15px !important;
+}
+.vien{
+    border: 4px solid black;
+    background-color: rgba(2, 2, 2, 0.5);
+}
+.vien :hover{
+    background-color: tan;
+}
+#theme li{
+    padding-top: 0%;
+    margin-bottom: 0%;
+}
+li h1{
+    font-size: 40px;
+    line-height: normal;
+    color: tomato;
+}
+li  a{
+    text-decoration: none;
+    color: black;
+}
+
+#the-a a{
+    font-size: 20px;
+}
+.kich-thuoc{
+    width: 192px;
+    height: auto;
+}
+.kich-thuoc h1 a{
+    line-height: 1.5;
+}
+.kich-thuoc H1{
+    margin-bottom: 10px ;
+}
+
+.boder a{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boder{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border: 4px solid yellow;
+    width: 125px;
+    margin-top: 10px;
+}
+
+.boder :hover{
+    background-color: salmon;
+}
+
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+#logo img{
+    width: 150px;
+}
+
+/* xu ly giao dien dien thoai */
+@media screen and (max-width:768px) {
+    ul{
+        padding: 0 25%;
+        width: 101%;
+    }
+    #theme{
+        padding-left: 0%;
+        
+    }
+    #theme h1 {
+        font-size: 30px;
+    }
+}

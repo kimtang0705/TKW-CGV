@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<link rel="stylesheet" href="./TrangChu.css">
+
+<body>
+
+    <div class="logo">
+        <h2>
+            <span>C</span>
+            <span>G</span>
+            <span>V</span>
+        </h2>
+    </div>
+    <div class="container">
+        <!-- thêm icon khi thay dôi giao dien dien thoai -->
+        <div class="toggle" onclick="menu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+
+        <div class="item">
+            <div class="dropdown">
+                <a>Rạp Phim<i class="fas fa-sort-down"></i></a>
+                <div class="DropContent">
+                    <a href="../phim_sap_chieu/Phim-sap-chieu.html">Sắp Chiếu</a>
+                    <a href="../phim_dangChieu/Phim-dang-chieu.html">Đang Chiếu</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <a href="../giới thiệu CGV/0306201063GT.html">CGV</a>
+        </div>
+        <div class="item">
+            <a href="../from dat ve (1)/lab8.html">Mua Vé</a>
+        </div>
+        <div class="item">
+            <a href="../CGV_Email/taikhoan.html">Đăng kí</a>
+        </div>
+        <div class="item">
+            <a href="../the-qua-tang/the-qua-tang.html">Event</a>
+        </div>
+        <div class="item">
+            <a href="videoCGV.html">Video</a>
+        </div>
+        <div class="item">
+            <div class="dropdown">
+                <a>Công Nghệ Chiếu<i class="fas fa-sort-down"></i></a>
+                <div class="DropContent">
+                    <a href="../CGV-4DX/4dx.html">Công nghệ 4DX</a>
+                    <a href="../CGV-IMAX/CGV_IMAX.html">Công nghệ IMAX</a>
+                    <a href="../sweetbox/slideshow.html">Công nghệ Sweetbox</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="cha4">
+        <div class="slideshow">
+            <div class="slides fade">
+                <img src="slide1.jpg" style="width: 100%">
+            </div>
+            <div class="slides fade">
+                <img src="slide2.jpg" style="width: 100%">
+            </div>
+            <div class="slides fade">
+                <img src="slide3.jpg" style="width: 100%">
+            </div>
+            <div class="slides fade">
+                <img src="slide4.jpg" style="width: 100%">
+            </div>
+            <a class="truoc" onclick="hienThiSlideTruocDo()">&#10094;</a>
+            <a class="sau" onclick="hienThiSlideKeTiep()">&#10095;</a>
+        </div>
+    </div>
+
+
+    <hr>
+    <hr>
+    <span><h2>HOT MOVIE</h2></span>
+    <div id="cha3">
+        <div class="container3">
+            <div class="box">
+                <div class="content3">
+                    <div class="icon">CGV</div>
+                    <img src="h5.jpg" alt="">
+                    <h3>Mắt Biếc</h3>
+                    <a href="../from dat ve (1)/lab8.html">Mua Vé</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content3">
+                    <div class="icon">CGV</div>
+                    <img src="h8.jpg" alt="">
+                    <h3>Mắt Biếc</h3>
+                    <a href="../from dat ve (1)/lab8.html">Mua Vé</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content3">
+                    <div class="icon">CGV</div>
+                    <img src="h15.jpg" alt="">
+                    <h3>Mắt Biếc</h3>
+                    <a href="../from dat ve (1)/lab8.html">Mua Vé</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slide event-->
+    <div id="cha">
+        <h2>EVENT</h2>
+        <div class="Event">
+            <div class="container1">
+
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="event_cgv.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Card on</h2>
+                        <p>Quà tặng hấp dẫn cho khách hàng khi đặt vé online tại hệ thống bán vé online của CGV</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="event_cgv1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Card on</h2>
+                        <p>Thử thách cùng CGV để có cơ hội nhận được nhiều phần quà hấp dẫn dến từ CGV</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="event_cgv2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Card on</h2>
+                        <p>CGV hân hạnh mang đến cho các bạn một trải nghiệm cực kỳ độc đáo cho các buổi tiệc,sinh nhật, cầu hôn...Với “Dream Party Package”buổi tiệc của bạn trở nên ấn tượng hơn bao giờ hết!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerCGV">
+        <footer>
+            <div class="containerFooter">
+                <div class="sec aboutus">
+                    <h2>CGV Movie</h2>
+                    <p>CÔNG TY TNHH CJ CGV VIETNAMGiấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 31/7/2008, đăng ký thay đổi lần thứ 5 ngày 14/10/2015, cấp bởi Sở KHĐT thành phố Hồ Chí Minh.Địa Chỉ: Tầng 2, Rivera Park Saigon - Số 7/28 Thành Thái, P.14, Q.10,
+                        TPHCM.Hotline: 1900 6017COPYRIGHT 2017 CJ CGV. All RIGHTS RESERVED .</p>
+                    <div class="Ficon">
+                        <li><a href="https://www.facebook.com/cgvcinemavietnam/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=vWsvGDUqia8"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/CGV_ID/status/476309534781079552"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/cgvcinemasvietnam/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </div>
+                </div>
+                <div class="footer1">
+                    <div class="BoxFooter">
+                        <div class="IconFooter">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                            <h4>Address</h4>
+                            <h3>Số 7/28 Thành Thái, P.14, Q.10, TPHCM</h3>
+                        </div>
+                    </div>
+                    <div class="BoxFooter">
+                        <div class="IconFooter">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+
+                            <h4>Phone</h4>
+                            <h3>+84 909 708 79</h3>
+                        </div>
+                    </div>
+                    <div class="BoxFooter">
+                        <div class="IconFooter">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                            <h4>Email</h4>
+                            <h3>CGV@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="0306201063.js"></script>>
+</body>
+
+</html>

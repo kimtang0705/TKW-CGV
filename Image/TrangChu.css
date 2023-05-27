@@ -1,0 +1,594 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* logo*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: rgb(250, 248, 248);
+}
+.logo h2{
+    font-size: 6em;
+    color: tomato;
+    font-weight: 500;  
+    font-weight: 700;  
+}
+.logo h2 span{
+    animation: animate 1s linear infinite;
+}
+.logo h2 span:nth-child(1){
+    animation-delay:0s ;
+}
+.logo h2 span:nth-child(2){
+    animation-delay:0.2s ;
+}
+.logo h2 span:nth-child(3){
+    animation-delay:0.4s ;
+}
+.logo h2 span:nth-child(4){
+    animation-delay:0.6s ;
+}
+.logo h2 span:nth-child(5){
+    animation-delay:0.8s ;
+}
+@keyframes animate{
+    0%{ 
+        color:tomato;
+        text-shadow: none;
+    }
+    100%{ 
+        color: #fff;
+        box-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;
+    }
+}
+.container{
+    display: flex;
+    background-color:tomato;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.item{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+div a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+.item a:hover{
+    background: rgb(121,114,114);
+    background: linear-gradient(0deg, rgba(121,114,114,1) 0%, rgba(22,21,21,1) 100%);
+    width: 100%;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.DropContent{
+    position: absolute;
+    display: none;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 5;
+}
+
+.dropdown:hover .DropContent{
+    display: block;
+    line-height: 25px;
+}
+
+#list a{
+    display: inline;
+    text-decoration: none;
+}
+
+#list{
+    margin-left: 30%;
+}
+
+
+#cha4{
+    background: url('backgroundCGV.jpg') no-repeat center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.slideshow
+{
+  position: relative;
+  width: 800px;
+  left: 18px;
+  
+}
+.slides
+{
+  display: none;
+}
+.truoc, .sau
+{
+  position: absolute;  
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.sau
+{
+  right: 0;
+}
+
+.truoc:hover, .sau:hover
+{
+  background-color: #ce418d;
+  opacity: 0.8;
+}
+.fade
+{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+#logo img{
+  font-size: 60px;
+  width: 150px;
+}
+
+
+/* Event CGV*/
+#cha{
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+#cha h2{
+    text-align: center;
+    padding: 10px;
+}
+#cha p{
+    font-weight: 700;
+}
+
+.Event{
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafa;
+}
+
+.container1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container1 .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover{
+    height: 440px;
+}
+
+.container1 .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container1 .card .imgBx img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container1 .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 50%;
+    height: 50%;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    top: 750px;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+ul li a{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+ul li:hover a{ 
+    color: cadetblue;
+}
+
+.cursor{
+    position: fixed;
+    width: 0;
+    height: 0;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.2s, height 0.2s;/**/
+}
+
+ul li:hover ~ .cursor{
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(116, 124, 243);
+}
+
+#cha3{ 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container3 .box{ 
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba((0), 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container3 .box .icon{
+    position: relative;
+    width: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.container3 .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.container3 .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+
+.container3 .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.container3 .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+
+.container3 .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.container3 .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.container3 .box .content3 h3,a,img{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container3 a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+span h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+#footerCGV{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 80px 40px;
+    background:url('backgroundCGV.jpg');
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .containerFooter{
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer .containerFooter .sec{
+    margin-right: 30px;
+}
+footer .containerFooter .sec.aboutus{
+    width: 25%;
+}
+footer .containerFooter .sec.aboutus h2{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/* gach chân đỏ*/
+footer .containerFooter h2:before{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer p{
+    color: #000;
+    font-weight: 700;
+    
+}
+li {
+    width: 30px;
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+.Ficon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.Ficon li a:hover{
+    background: #f00;
+    border-radius: 35%;
+    transition: 0.5s;
+}
+
+.footer1{
+    width: 50%;
+    float: right;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;/**/
+}
+.footer1 .BoxFooter{
+    align-items: center;
+}
+.footer1 .BoxFooter .IconFooter .fa{
+    font-size: 40px;
+    cursor: pointer;
+}
+.footer1 .BoxFooter .IconFooter h3,
+.footer1 .BoxFooter .IconFooter h4{
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 20px;
+}
+.footer1 .BoxFooter .IconFooter h4{
+    font-weight: 600;
+    margin: 5px 0;
+    font-style: 30px;
+}
+.footer1 .BoxFooter .IconFooter h3:before,
+.footer1 .BoxFooter .IconFooter h4:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 100%;/* 1*/
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    transition: 1s;
+}
+.footer1 .BoxFooter .IconFooter h4:before{
+    left: initial;
+    right: 100%;
+    background:#00bcd4;
+
+}
+.footer1 .BoxFooter .fa:hover ~ h3:before
+{
+    left: -100%;/* 1 */
+}
+.footer1 .BoxFooter .fa:hover ~ h4:before{
+    left: initial;
+    right: -100%;
+}
+
+
+/* thay đổi giao dien dien thoai */
+.toggle{
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:768px) {
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        float: right;
+    }
+    .DropContent{
+        background-color: black;
+    }
+    .dropdown a,.item a{
+        color: #fff;
+        font-size: 25px;
+    }
+    .toggle{
+        position: absolute;
+        display: block;
+        top: 43%;
+        width: 101%;
+        left: 0px;
+    }
+    .item{
+        display: none;
+      
+    }
+    .DropContent{
+        z-index: 2;
+    }
+    .slideshow{
+        left: 0;
+        padding: 0 5px;
+    }
+   
+    .container3{
+        flex-direction: column;
+    }
+    .container3 .box .content3 h3, a, img{
+        width: 290px;
+    }
+    .container1 .card {
+        margin: 93px 10px;
+    }
+    .truoc,.sau{
+        width: 40px;
+        top: 40%;
+    }
+    footer p{
+        font-size: 13px;
+    }
+
+}

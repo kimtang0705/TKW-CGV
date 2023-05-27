@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+#cha{
+    position: relative;
+}
+body{
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    padding: 0 50px;
+}
+div{
+    display: block;
+}
+#menu{
+    display: flex;
+    border: 1px solid black;
+    list-style: none;
+    background: rgb(194, 194, 194);
+    padding: 10px;
+}
+#menu .px img{  
+    width: auto;
+    height: 16px;
+}
+a{
+    text-decoration: none;
+}
+#page{
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+#name{
+    border-bottom: 0.3px solid rgb(94, 21, 21);
+}
+#ND-phim{
+    display: flex;
+    
+}
+#img{
+    margin-right: 40px;
+}
+#nw{
+    margin-top: -20px;
+}
+.boder{
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#trl{
+    position: absolute;
+    padding: 15px 20px;
+    border-radius: 6px;
+    left: 45%;
+    color: white;
+    background-color: red;
+}
+#ND1{
+    position: absolute;
+    top: 115%;
+}
+#video{
+    position: absolute;
+    left: 20%;
+}
+label{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:497px) {
+    video{
+        width: 320px;
+        height: 140px;
+    }
+    #video{
+        left: 11%;
+    }
+    #ND-phim{
+        display: block;
+    }
+    #trl{
+        left: 30%;
+    }
+    p{
+        margin-top:-20px ;
+    }
+   
+    
+}
